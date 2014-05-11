@@ -1,0 +1,23 @@
+{
+  "name": "gitblog",
+  "version": "0.0.0",
+  "description": "An app with technology of nodejs",
+  "main": "web-server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "library",
+    "nodejs"
+  ],
+  "author": "Summer Fan, Noah Tang",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-clean": "~0.5.0"
+  }
+}
