@@ -1,0 +1,5 @@
+baseurl: /blog
+blogname : Summer's blog
+author : Summer
+markdown: rdiscount
+pygments: true
