@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>github blog</title>
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap-wysihtml5-0.0.2/bootstrap-wysihtml5-0.0.2.css">
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap-wysihtml5-0.0.2/libs/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap3-wysihtml5-master/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap3-wysihtml5-master/css/bootstrap3-wysiwyg5.css">
 	<style>
 		#edit-textarea, #editor_content{
 			width: 100%;
@@ -12,10 +12,10 @@
 		}
 	</style>
 
-	<script src="lib/bootstrap-wysihtml5-0.0.2/libs/js/wysihtml5-0.3.0_rc2.js"></script>
-	<script src="lib/bootstrap-wysihtml5-0.0.2/libs/js/jquery-1.7.1.min.js"></script>
-	<script src="lib/bootstrap-wysihtml5-0.0.2/libs/js/bootstrap.min.js"></script>
-	<script src="lib/bootstrap-wysihtml5-0.0.2/bootstrap-wysihtml5-0.0.2.js"></script>
+	<script src="lib/bootstrap3-wysihtml5-master/js/wysihtml5-0.3.0.js"></script>
+	<script src="lib/bootstrap3-wysihtml5-master/js/jquery-1.7.2.min.js"></script>
+	<script src="lib/bootstrap3-wysihtml5-master/js/bootstrap.min.js"></script>
+	<script src="lib/bootstrap3-wysihtml5-master/js/bootstrap3-wysihtml5.js"></script>
 	<script src="js/app.js"></script>
 </head>
 <body>
@@ -32,7 +32,10 @@
 			var content = $('#edit-textarea').val() || "Enter text ...";
 
 			// init
-			$('#edit-textarea').wysihtml5();
+			$('#edit-textarea').wysihtml5({
+				'html': true,
+				'color': true
+			});
 			$('#editor_content').html(content);
 
 
